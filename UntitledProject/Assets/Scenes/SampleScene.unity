@@ -288,7 +288,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2cc721179103bac4f8336c6644961a9b, type: 2}
+  - {fileID: 2100000, guid: 986938f20e52bfb439f59984981693f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -393,7 +393,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2cc721179103bac4f8336c6644961a9b, type: 2}
+  - {fileID: 2100000, guid: 986938f20e52bfb439f59984981693f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -821,7 +821,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b178d66727feb144ca31a7d97fe2d4f9, type: 2}
+  - {fileID: 2100000, guid: 96a176ca467c2cd44badbf2d2e9ede47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -984,6 +984,7 @@ GameObject:
   - component: {fileID: 1465542517}
   - component: {fileID: 1465542519}
   - component: {fileID: 1465542518}
+  - component: {fileID: 1465542520}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1017,13 +1018,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1465542516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5830bd60e038365499f33a3e63591027, type: 3}
+  m_Script: {fileID: 11500000, guid: 707e42623d7995d439d7ac9cc07d025c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 963194227}
+  playerCamera: {fileID: 0}
   walkSpeed: 6
   runSpeed: 12
-  jumpPower: 0
+  jumpPower: 7
   gravity: 10
   lookSpeed: 2
   lookXLimit: 45
@@ -1056,6 +1057,28 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1465542520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465542516}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 707e42623d7995d439d7ac9cc07d025c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 0}
+  walkSpeed: 6
+  runSpeed: 12
+  jumpPower: 7
+  gravity: 10
+  lookSpeed: 2
+  lookXLimit: 45
+  defaultHeight: 2
+  crouchHeight: 1
+  crouchSpeed: 3
 --- !u!1 &1528408414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,7 +1179,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2cc721179103bac4f8336c6644961a9b, type: 2}
+  - {fileID: 2100000, guid: 986938f20e52bfb439f59984981693f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
